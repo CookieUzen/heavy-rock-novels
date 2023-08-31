@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "heavy-rock-novels"
+version = "0.1.0"
+description = ""
+authors = ["CookieUzen <uzen.huang@gmail.com>"]
+readme = "README.md"
+packages = [{include = "heavy_rock_novels"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ebooklib = "^0.18"
+html2text = "^2020.1.16"
+
+[tool.pyright]
+venv = "."
+venvPath = ".venv"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+in-project = true
